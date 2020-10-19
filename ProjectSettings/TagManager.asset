@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - FireBall
+  - Icicle
+  - Lightning
+  - SwitchBlock
+  - Red
+  - Blue
+  - Yellow
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,13 +22,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Player Hitbox
+  - Player Hurtbox
+  - Enemy
+  - Enemy Hitbox
+  - Enemy Hurtbox
   - 
   - 
   - 
