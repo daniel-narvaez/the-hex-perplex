@@ -258,6 +258,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a00941cd-5f6d-412a-93c7-7d5405342368",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5b5265ad-3b23-4d87-ade1-dac948228f79",
                     "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
@@ -271,6 +282,17 @@
                     "name": "",
                     "id": "5a9d838c-5dc5-4d59-8301-95cafe7cbcf5",
                     "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7565585-f849-44ec-b947-4325f3606486",
+                    "path": "<Keyboard>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

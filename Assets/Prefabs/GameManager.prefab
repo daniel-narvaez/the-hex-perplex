@@ -46,12 +46,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObjects: []
   itemsToPool:
-  - amountToPool: 3
+  - amountToPool: 1
     objectToPool: {fileID: 3887241747574905583, guid: c2c7e6f962d91db4d9e9815df26bc80e, type: 3}
   - amountToPool: 1
     objectToPool: {fileID: 8420218615993469439, guid: b69c2dd7fd8c7d440ac51c5f8793433a, type: 3}
   - amountToPool: 1
     objectToPool: {fileID: 6530376148123472718, guid: a1ddade6ac39e4e4ea6c7cb980264e35, type: 3}
+  - amountToPool: 6
+    objectToPool: {fileID: 9195035906209683746, guid: 90a252f91b9c2c84bbc5289af97c531c, type: 3}
+  - amountToPool: 6
+    objectToPool: {fileID: 3450555286438284465, guid: b97f041f4b2e9d74abc3f7c771e1eb9a, type: 3}
+  - amountToPool: 6
+    objectToPool: {fileID: 4462488990672802845, guid: 294e4a1758fbc0a4bb0f812561c32279, type: 3}
+  - amountToPool: 6
+    objectToPool: {fileID: 1053074149546758822, guid: 2505da2b07d362a459277532de6719cc, type: 3}
 --- !u!114 &5455470915189508180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +73,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocksActivated: 0
-  redPathActivated: 0
-  bluePathActivated: 0
-  yellowPathActivated: 0
+  redPathActivated: 1
+  bluePathActivated: 1
+  yellowPathActivated: 1

@@ -13,6 +13,12 @@ TagManager:
   - Blue
   - Yellow
   - Enemy
+  - EnemyBullet
+  - Checkpoint
+  - RedEnemy
+  - BlueEnemy
+  - YellowEnemy
+  - Neutral
   layers:
   - Default
   - TransparentFX
@@ -29,7 +35,7 @@ TagManager:
   - Enemy
   - Enemy Hitbox
   - Enemy Hurtbox
-  - 
+  - Camera Bounds
   - 
   - 
   - 

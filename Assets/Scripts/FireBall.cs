@@ -7,14 +7,16 @@ public class FireBall : MonoBehaviour
     Rigidbody2D _rigidbody;
     public float _velocity = 400;
     public float _lifeSpan = 2;
-    public float orientation;
+    float orientation;
 
     void OnEnable()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        orientation = transform.GetComponentInParent<Player>().orientation;
+        transform.localScale = new Vector2(transform.localScale.x * orientation, transform.localScale.y);
+        transform.parent = null;
         StartCoroutine(Shoot());
         StartCoroutine(LifeSpan());
-        orientation = Player.orientation;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,6 +33,7 @@ public class FireBall : MonoBehaviour
     IEnumerator LifeSpan()
     {
         yield return new WaitForSeconds(_lifeSpan);
+        transform.localScale = new Vector2(transform.localScale.x * orientation, transform.localScale.y); 
         _rigidbody.velocity = Vector2.zero;
         this.gameObject.SetActive(false);
     }

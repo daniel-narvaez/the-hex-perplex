@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HexPath : MonoBehaviour
 {
-    public enum Color {Red, Blue, Yellow}
+    public enum Color {Neutral, Red, Blue, Yellow}
     public Color pathColor;
     BoxCollider2D _boxCollider2D;
     Animator _animator;
@@ -24,7 +24,6 @@ public class HexPath : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
         switch (pathColor)
         {
             case Color.Red:

@@ -14,12 +14,4 @@ public class SwitchManager : MonoBehaviour
     {
         SharedInstance = this;
     }
-
-    void Start()
-    {
-        blocksActivated = false;
-        redPathActivated = false;
-        bluePathActivated = false;
-        yellowPathActivated = false;
-    }
 }

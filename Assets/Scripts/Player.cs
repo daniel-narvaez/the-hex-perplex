@@ -11,11 +11,13 @@ public class Player : MonoBehaviour
     //I've gone ahead and created controls for movement.
 
     //This right here is a reference to the Input Action Asset "PlayerControls"
+
+    [SerializeField]
     PlayerControls controls;
 
     //Animation
     Animator _animator;
-    public static float orientation;
+    public float orientation;
 
     //Basic Movement
     Vector2 move; 
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour
     //Jumping
     public bool grounded;
     public Transform contactPoint;
+    public float contactRadius;
     public LayerMask groundLayer;
     public float jumpForce = 400;
     private int doubleJump;
@@ -40,16 +43,20 @@ public class Player : MonoBehaviour
     //Attacks
     public Transform fireBallPoint;
     public Transform iciclePoint;
+    public Transform lightningPoint;
     GameObject lightning;
 
     //Hitboxes/Hurtboxes
     BoxCollider2D hurtbox;
     public float knockbackForce;
     public bool damaged;
+    public ScreenBoundaries screenBoundaries;
 
     void Awake()
     {
         controls = new PlayerControls();
+        controls.Enable();
+
         controls.Gameplay.Jump.performed += ctx => Jump();
         controls.Gameplay.Jump.performed += ctx => IcicleJump();
         controls.Gameplay.Shoot.performed += ctx => FireBallShot();
@@ -67,10 +74,14 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
+        //Sets the playing in position of the level's starting point
+        transform.position = Checkpoint.CurrentlyActiveCheckpoint();
+        screenBoundaries = GetComponent<ScreenBoundaries>();
+
         //lightning dash is always wherever the player is
         lightning = ObjectPooler.SharedInstance.GetPooledObject("Lightning");
         lightning.transform.parent = this.transform;
-        lightning.transform.position = transform.position;
+        lightning.transform.position = lightningPoint.position;
 
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
@@ -87,7 +98,7 @@ public class Player : MonoBehaviour
     void Update()
     { 
         //Code for checking if player is grounded
-        grounded = Physics2D.OverlapCircle(contactPoint.position, 0.5f, groundLayer);
+        grounded = Physics2D.OverlapCircle(contactPoint.position, contactRadius, groundLayer);
         //Code for moving left and right
         Vector2 movement = new Vector2(move.x * speed, _rigidbody.velocity.y);
 
@@ -119,6 +130,7 @@ public class Player : MonoBehaviour
             if(dash > 0 || dashTimer <= 0)
             {
                 lightning.SetActive(false);
+                controls.Gameplay.Jump.Enable();
                 _rigidbody.gravityScale = _gravity;
                 _rigidbody.velocity = movement;
                 hurtbox.enabled = true;
@@ -150,6 +162,7 @@ public class Player : MonoBehaviour
         {
             _animator.SetTrigger("Shooting");
             fireBall.transform.position = fireBallPoint.position;
+            fireBall.transform.parent = this.transform;
             fireBall.SetActive(true);
         }
     }
@@ -183,7 +196,8 @@ public class Player : MonoBehaviour
             if (lightning != null) 
             {
                 lightning.SetActive(true);
-            }            
+            }
+            controls.Gameplay.Jump.Disable();            
             _rigidbody.velocity = Vector2.zero;
             _rigidbody.AddForce(new Vector2(dashSpeed * orientation, 0));
         }
@@ -191,16 +205,26 @@ public class Player : MonoBehaviour
 
     public IEnumerator HitByAttack()
     {
-        //player is knocked back and invulnerable for 2 seconds, but can once again move after 0.7 seconds.
-        _animator.SetTrigger("Damaged");
+        _animator.SetTrigger("Death");
         damaged = true;
+        controls.Gameplay.Disable(); //disabled due to death
         hurtbox.enabled = false;
         _rigidbody.velocity = Vector2.zero;
-        _rigidbody.AddForce(new Vector2(knockbackForce * (orientation * -1), knockbackForce));
-        yield return new WaitForSeconds(0.7f);
-        damaged = false;
+        _rigidbody.gravityScale = 0;
+        //_rigidbody.AddForce(new Vector2(knockbackForce * (orientation * -1), 0));
 
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(0.33f); //damaged animation duration
+        _rigidbody.velocity = Vector2.zero;
+        screenBoundaries.enabled = false; //allows the player to move their position to a checkpoint beyond boundaries
+
+        yield return new WaitForSeconds(1.0f); //death animation duration
+        transform.position = Checkpoint.CurrentlyActiveCheckpoint(); //moves player to last checkpoint
+        _rigidbody.gravityScale = _gravity;
+        damaged = false;
+        controls.Gameplay.Enable(); //re-enabled due to respawn
+
+        yield return new WaitForSeconds(0.5f);
         hurtbox.enabled = true;
+        screenBoundaries.enabled = true;
     }
 }

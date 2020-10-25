@@ -19,21 +19,21 @@ public class PathSwitch : MonoBehaviour
         switch (switchColor)
         {
             case Color.Red:
-            if(other.gameObject.tag == ("FireBall"))
+            if(other.gameObject.tag == ("FireBall") || other.gameObject.tag == ("RedEnemy"))
             {
                 _animator.SetTrigger("Flash");
                 SwitchManager.SharedInstance.redPathActivated = !SwitchManager.SharedInstance.redPathActivated;
             }
                 break;
             case Color.Blue:
-            if(other.gameObject.tag == ("Icicle"))
+            if(other.gameObject.tag == ("Icicle") || other.gameObject.tag == ("BlueEnemy"))
             {                
                 _animator.SetTrigger("Flash");
                 SwitchManager.SharedInstance.bluePathActivated = !SwitchManager.SharedInstance.bluePathActivated;
             }
                 break;
             case Color.Yellow:
-            if(other.gameObject.tag == ("Lightning"))
+            if(other.gameObject.tag == ("Lightning") || other.gameObject.tag == ("YellowEnemy"))
             {               
                 _animator.SetTrigger("Flash");
                 SwitchManager.SharedInstance.yellowPathActivated = !SwitchManager.SharedInstance.yellowPathActivated;
