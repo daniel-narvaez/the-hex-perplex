@@ -12,9 +12,11 @@ public class FireBall : MonoBehaviour
     void OnEnable()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        orientation = transform.GetComponentInParent<Player>().orientation;
-        transform.localScale = new Vector2(transform.localScale.x * orientation, transform.localScale.y);
-        transform.parent = null;
+
+        orientation = Player.orientation;
+        if(orientation < 0) 
+        {transform.localScale = new Vector2(-1, transform.localScale.y);} else
+        {transform.localScale = new Vector2(1, transform.localScale.y);}
         StartCoroutine(Shoot());
         StartCoroutine(LifeSpan());
     }

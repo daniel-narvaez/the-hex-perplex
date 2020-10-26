@@ -19,6 +19,11 @@ public class HexPath : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
         _boxCollider2D.size = _spriteRenderer.size;
+
+        if(transform.parent != null)
+        {
+            _boxCollider2D.size = gameObject.GetComponentInParent<BoxCollider2D>().size;
+        }
     }
 
     // Update is called once per frame

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8070745006228131435}
   m_Layer: 13
   m_Name: YellowEnemyBullet
-  m_TagString: Neutral
+  m_TagString: YellowEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

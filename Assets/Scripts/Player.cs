@@ -11,13 +11,11 @@ public class Player : MonoBehaviour
     //I've gone ahead and created controls for movement.
 
     //This right here is a reference to the Input Action Asset "PlayerControls"
-
-    [SerializeField]
     PlayerControls controls;
 
     //Animation
     Animator _animator;
-    public float orientation;
+    public static float orientation;
 
     //Basic Movement
     Vector2 move; 
@@ -55,8 +53,6 @@ public class Player : MonoBehaviour
     void Awake()
     {
         controls = new PlayerControls();
-        controls.Enable();
-
         controls.Gameplay.Jump.performed += ctx => Jump();
         controls.Gameplay.Jump.performed += ctx => IcicleJump();
         controls.Gameplay.Shoot.performed += ctx => FireBallShot();
@@ -74,17 +70,18 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+
         //Sets the playing in position of the level's starting point
         transform.position = Checkpoint.CurrentlyActiveCheckpoint();
         screenBoundaries = GetComponent<ScreenBoundaries>();
+        orientation = transform.localScale.x;
 
         //lightning dash is always wherever the player is
         lightning = ObjectPooler.SharedInstance.GetPooledObject("Lightning");
         lightning.transform.parent = this.transform;
         lightning.transform.position = lightningPoint.position;
-
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
 
         dash = dashValue;
         dashTimer = dashDuration;
@@ -162,7 +159,6 @@ public class Player : MonoBehaviour
         {
             _animator.SetTrigger("Shooting");
             fireBall.transform.position = fireBallPoint.position;
-            fireBall.transform.parent = this.transform;
             fireBall.SetActive(true);
         }
     }

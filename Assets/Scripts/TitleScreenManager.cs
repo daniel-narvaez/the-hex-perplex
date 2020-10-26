@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TitleScreen : MonoBehaviour
+public class TitleScreenManager : MonoBehaviour
 {
     private TransitionManager _transitionManager;
 
@@ -10,9 +10,11 @@ public class TitleScreen : MonoBehaviour
     {
         _transitionManager = FindObjectOfType<TransitionManager>();
     }
+
+    //Title Screen Buttons
     public void GameStart()
     {
-        
+        _transitionManager.NextScene("Level1");
     }
 
     public void Tutorial()

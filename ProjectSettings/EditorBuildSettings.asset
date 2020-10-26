@@ -11,10 +11,26 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Whitebox.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo.unity
     guid: 7caaba0a1e025004da74fde1649879ad
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 2b4576f571c2726438f0cf78cf0e634f
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 8251d314c9539174295dc98d5ae83d46
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 62fc2a0bad2676d4a9fdfd8e97d35731
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 2f9e704d4db8fda4db121f77534639a8
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 57cf76c23fc2cbe409fe97233d96f04d
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: e3964838969f17543bcb62a8943a4a24
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: f92b0227d1f4e1d4fbc3406f933fcc4b, type: 2}

@@ -220,7 +220,7 @@ MonoBehaviour:
   _gravity: 2
   grounded: 0
   contactPoint: {fileID: 1492733729895593141}
-  contactRadius: 0.25
+  contactRadius: 0.24
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -231,6 +231,7 @@ MonoBehaviour:
   lightningPoint: {fileID: 3912734949803556627}
   knockbackForce: 250
   damaged: 0
+  screenBoundaries: {fileID: 0}
 --- !u!114 &-5008954260814008251
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class EnemyStationary : MonoBehaviour
     public Transform bulletPoint;
     public bool isAttacking;
     public float orientation;
+    public float distance;
     public bool damaged;
     public BoxCollider2D hurtbox;
 
@@ -44,7 +45,7 @@ public class EnemyStationary : MonoBehaviour
                 transform.localScale *= new Vector2(-1, 1);
             } 
 
-            if(Vector2.Distance(transform.position, player.position) < 6)
+            if(Vector2.Distance(transform.position, player.position) < distance)
             {
                 isAttacking = true;
             }else{
@@ -71,14 +72,9 @@ public class EnemyStationary : MonoBehaviour
         {
             if (isAttacking && damaged == false)
             {
-                yield return new WaitForSeconds(0.25f);
-                Attack();
-                yield return new WaitForSeconds(0.25f);
-                Attack();
-                yield return new WaitForSeconds(0.25f);
                 Attack();
             }
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(2);
         }
     }
 }

@@ -13,6 +13,7 @@ public class EnemyPatrol : MonoBehaviour
     public LayerMask groundLayer;
     public bool damaged;
     public BoxCollider2D hurtbox;
+    public BoxCollider2D platform;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -31,7 +32,7 @@ public class EnemyPatrol : MonoBehaviour
             _rigidbody.velocity = new Vector2(speed * orientation, _rigidbody.velocity.y);
             RaycastHit2D groundInfo = Physics2D.Raycast(groundDetect.position, Vector2.down, distance, groundLayer);
             
-            if (groundInfo.collider == false)
+            if (groundInfo.collider != platform)
             {
                 if(movingLeft == true)
                 {

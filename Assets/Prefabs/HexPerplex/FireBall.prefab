@@ -100,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _velocity: 500
   _lifeSpan: 2
-  orientation: 0
 --- !u!50 &9180726621651137438
 Rigidbody2D:
   serializedVersion: 4

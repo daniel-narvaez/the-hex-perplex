@@ -10,7 +10,7 @@ public class Checkpoint : MonoBehaviour
     public GameObject checkpointLight;
     
     public static GameObject[] checkpointsList;
-    void Start()
+    void Awake()
     {
         startingPoint = GameObject.Find("StartingPoint");
         checkpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
