@@ -1,22 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pause : MonoBehaviour {
 
-	public bool IsPaused;
-
+	public static bool isPaused;
 	public GameObject PauseMenu;
+	public PlayerControls controls;
+	private TransitionManager _transitionManager;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake()
+	{
+		controls = new PlayerControls();
+		controls.Pause.Pause.performed += ctx => TogglePauseMenu();
+	}
+
+	void OnEnable()
+	{
+		controls.Pause.Enable();
+		PauseMenu.SetActive(false);
+		isPaused = false;
+
+		_transitionManager = FindObjectOfType<TransitionManager>();
+	}
+
+	void OnDisable()
+	{
+		controls.Pause.Disable();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void TogglePauseMenu()
+	{
+		isPaused = !isPaused;
 
-		if (IsPaused) {
+		if (isPaused) {
 			PauseMenu.SetActive (true);
 			Time.timeScale = 0f;
 		} else 
@@ -24,11 +42,21 @@ public class Pause : MonoBehaviour {
 			PauseMenu.SetActive (false);
 			Time.timeScale = 1f;
 		}
+	}
 
+	public void Resume()
+	{
+		TogglePauseMenu();
+	}
 
-		if (Input.GetKeyDown (KeyCode.Escape)) 
-		{
-			IsPaused = !IsPaused;
-		}
+	public void ReturnToTitle()
+	{
+		Time.timeScale = 1f;
+		_transitionManager.NextScene("Title");
+	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
 	}
 }

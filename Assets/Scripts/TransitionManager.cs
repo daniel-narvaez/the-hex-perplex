@@ -9,6 +9,7 @@ public class TransitionManager : MonoBehaviour
     public GameObject faderCanvas;
     public Image faderImg;
     public float fadeTime;
+    
     private void Awake()
     {
         if (FindObjectsOfType<TransitionManager>().Length > 1)

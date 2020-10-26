@@ -144,10 +144,13 @@ public class Player : MonoBehaviour
     //Pressing Button South(Gamepad)/Space(Keyboard) will trigger the jump
     void Jump()
     {
-        if(grounded && _rigidbody.velocity.y == 0)
-        {
-            _rigidbody.velocity = Vector2.zero;
-            _rigidbody.AddForce(new Vector2(0, jumpForce));
+        if(Pause.isPaused == false)        
+        {        
+            if(grounded && _rigidbody.velocity.y == 0)
+            {
+                _rigidbody.velocity = Vector2.zero;
+                _rigidbody.AddForce(new Vector2(0, jumpForce));
+            }
         }
     }
 
