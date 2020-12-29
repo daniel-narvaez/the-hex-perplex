@@ -20,9 +20,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""a1933140-779a-49b1-8955-8e838243fdc0"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": ""AxisDeadzone"",
                     ""interactions"": """"
                 },
@@ -218,6 +218,61 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": ""right"",
                     ""id"": ""6a4db98d-4c11-421e-bbed-83da95d88a0f"",
                     ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""f1d8c403-8323-43eb-9758-cc43b272662f"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f7b0919e-2576-4f9a-ad01-1eb6bc437df7"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""3d0e775b-d62c-4256-836a-55ddfce48757"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""883616af-4a7f-4a9d-99e2-778edf62b976"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""de629812-4322-4b25-ae86-7e9fcca96551"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

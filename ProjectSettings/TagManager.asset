@@ -5,9 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - FireBall
-  - Icicle
-  - Lightning
   - SwitchBlock
   - Red
   - Blue
@@ -19,6 +16,11 @@ TagManager:
   - BlueEnemy
   - YellowEnemy
   - Neutral
+  - Ice
+  - Fire
+  - Lightning
+  - FireBall
+  - Icicle
   layers:
   - Default
   - TransparentFX

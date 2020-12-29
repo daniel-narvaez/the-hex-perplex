@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7971468007403554047
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435375904533613, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495501300649476374, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2341917253789824717, guid: 31dbd843c262a3f4281ae02ca3aa430a, type: 3}
+    - target: {fileID: 8938938638502642238, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
+      propertyPath: m_Name
+      value: CastleScenery_Ground_Sm_Red1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10c4231cbeffa9844b913088406a5432, type: 3}
