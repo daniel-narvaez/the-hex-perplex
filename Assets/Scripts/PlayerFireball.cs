@@ -4,61 +4,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerFireball : MonoBehaviour
+public class PlayerFireball : HexSpell
 {
-    public InputAction pyroShot;
-    GameObject spawnPoint;
-    bool canLaunch = true;
-
-    //Movement
-    Rigidbody2D _rigidbody2D;
-    PlayerMovement _playerMovement;
-
-    //Animation
-    AnimationManager _animationManager;
     
-    void OnEnable()
+    public override void TriggerCoroutine(InputActionPhase direction)
     {
-        pyroShot.Enable();
-    }
-
-    void OnDisable()
-    {
-        pyroShot.Disable();
-    }
-
-    void Awake()
-    {
-        pyroShot.started += ctx => TriggerCoroutine();
-    }
-    void Start()
-    {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _playerMovement = GetComponent<PlayerMovement>();
-
-        _animationManager = GetComponent<AnimationManager>();
-
-        CreateSpawnPoint();
-    }
-    
-    void TriggerCoroutine()
-    {
-        if(canLaunch == false)
+        if(readyToUse == false)
             return;
 
         AudioManager.SharedInstance.PlayClip("PyroShot");
-        CreateFireball();
-        StartCoroutine(LaunchFireball());       
+        CreateHexSpell(inputBinding.phase);
+        StartCoroutine(CastHexSpell(inputBinding.phase));       
     }
 
-    void CreateSpawnPoint()
+    public override void CreateSpawnPoint()
     {
         spawnPoint = new GameObject("FireballSpawnPoint");
         spawnPoint.transform.parent = this.transform;
         spawnPoint.transform.localPosition = new Vector2(0.39f, -0.28125f);
     }
 
-    void CreateFireball()
+    public override void CreateHexSpell(InputActionPhase direction)
     { 
         GameObject fireball = ObjectPooler.SharedInstance.GetPooledObject("Fire");
         if (fireball != null)
@@ -71,16 +37,17 @@ public class PlayerFireball : MonoBehaviour
         }
     }
 
-    IEnumerator LaunchFireball()
+    public override IEnumerator CastHexSpell(InputActionPhase direction)
     {
-        canLaunch = false;
+        readyToUse = false;
         _rigidbody2D.bodyType = RigidbodyType2D.Static;
         _animationManager.ChangeAnimationState("Player_LaunchFireball");
         yield return new WaitForSeconds(0.75f);
 
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;        
+        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         yield return new WaitForSeconds(0.25f);
 
-        canLaunch = true;
+        HexSpellManager.SharedInstance.ChangeCurrentSpell(0, " ");
+        InterfaceManager.SharedInstance.UpdateInterface(0, " ");
     }
 }

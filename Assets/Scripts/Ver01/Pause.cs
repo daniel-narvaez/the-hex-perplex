@@ -52,7 +52,7 @@ public class Pause : MonoBehaviour {
 	public void ReturnToTitle()
 	{
 		Time.timeScale = 1f;
-		_transitionManager.NextScene("Title");
+		//_transitionManager.NextScene(Color.white, "Title");
 	}
 
 	public void QuitGame()

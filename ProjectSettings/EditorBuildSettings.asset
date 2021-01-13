@@ -6,31 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
-    guid: 4015ad8f39c0e2148af051397a0b7d95
-  - enabled: 0
-    path: Assets/Scenes/Whitebox.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Demo.unity
-    guid: 7caaba0a1e025004da74fde1649879ad
+    path: Assets/Scenes/Title_Demo.unity
+    guid: df269fb2e345703429e925d141803172
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 2b4576f571c2726438f0cf78cf0e634f
+    path: Assets/Scenes/DemoLevel1.unity
+    guid: a30d696042e2ff948978e5571c919a48
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 8251d314c9539174295dc98d5ae83d46
+    path: Assets/Scenes/DemoLevel2.unity
+    guid: 504daa45c73947747b0a4da7f55668a1
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 62fc2a0bad2676d4a9fdfd8e97d35731
+    path: Assets/Scenes/DemoLevel3.unity
+    guid: 45d050fbfb389b84b9833cc4386e4485
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 2f9e704d4db8fda4db121f77534639a8
+    path: Assets/Scenes/DemoLevel4.unity
+    guid: 80f996d7e6617d342bab4d667594aa3d
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: 57cf76c23fc2cbe409fe97233d96f04d
-  - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: e3964838969f17543bcb62a8943a4a24
+    path: Assets/Scenes/DemoLevel5.unity
+    guid: 9bedbd1110f2e7846bc2bb89ea2f3845
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f92b0227d1f4e1d4fbc3406f933fcc4b, type: 2}

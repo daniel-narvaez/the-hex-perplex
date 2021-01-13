@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class HexPath : MonoBehaviour
 {
-    public enum Color {Neutral, Red, Blue, Yellow}
+    public enum Color {Red, Blue, Yellow}
     public Color pathColor;
     BoxCollider2D _boxCollider2D;
     Animator _animator;
-    SpriteRenderer _spriteRenderer;
     void Start()
     {
         //String to Enum. The string being used is this gameobject's tag
@@ -16,13 +15,30 @@ public class HexPath : MonoBehaviour
         
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _animator = GetComponent<Animator>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
 
-        _boxCollider2D.size = _spriteRenderer.size;
-
-        if(transform.parent != null)
+        switch (pathColor)
         {
-            _boxCollider2D.size = gameObject.GetComponentInParent<BoxCollider2D>().size;
+            case Color.Red:
+                _boxCollider2D.enabled = SwitchManager.SharedInstance.redPathActivated;
+                if(SwitchManager.SharedInstance.redPathActivated)
+                    _animator.Play("HexPath_Active");
+                else
+                    _animator.Play("HexPath_Inactive");
+                break;
+            case Color.Blue:
+                _boxCollider2D.enabled = SwitchManager.SharedInstance.bluePathActivated;
+                if(SwitchManager.SharedInstance.bluePathActivated)
+                    _animator.Play("HexPath_Active");
+                else
+                    _animator.Play("HexPath_Inactive");
+                break;
+            case Color.Yellow:
+                _boxCollider2D.enabled = SwitchManager.SharedInstance.yellowPathActivated;
+                if(SwitchManager.SharedInstance.yellowPathActivated)
+                    _animator.Play("HexPath_Active");
+                else
+                    _animator.Play("HexPath_Inactive");
+                break;                                
         }
     }
 

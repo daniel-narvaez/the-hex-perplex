@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ScreenBoundaries : MonoBehaviour
 {
-    GameObject leftBoundary;
-    GameObject rightBoundary;
+    GameObject leftBoundary, rightBoundary;
 
     void Start()
     {

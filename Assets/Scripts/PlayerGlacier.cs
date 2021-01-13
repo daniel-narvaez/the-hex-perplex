@@ -4,64 +4,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerGlacier : MonoBehaviour
+public class PlayerGlacier : HexSpell
 {
-    public InputAction glacialWave;
-    GameObject spawnPoint;
-    bool canShoot = true;
     public LayerMask groundLayer;
+    RaycastHit2D hit2D;
 
-    //Movement
-    Rigidbody2D _rigidbody2D;
-    PlayerMovement _playerMovement;
-
-    //Animation
-    AnimationManager _animationManager;
-
-    void OnEnable()
+    public override void TriggerCoroutine(InputActionPhase direction)
     {
-        glacialWave.Enable();
-    }
-
-    void OnDisable()
-    {
-        glacialWave.Disable();
-    }
-
-    void Awake()
-    {
-        glacialWave.started += ctx => TriggerCoroutine();
-    }
-
-    void Start()
-    {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _playerMovement = GetComponent<PlayerMovement>();
-
-        _animationManager = GetComponent<AnimationManager>();
-
-        CreateSpawnPoint();
-    }
-
-    void TriggerCoroutine()
-    {
-        RaycastHit2D hit2D = Physics2D.Raycast(spawnPoint.transform.position, Vector2.down, 0.1f, groundLayer);
-        if(_playerMovement.grounded == false || canShoot == false || hit2D.collider == null)
+        hit2D = Physics2D.Raycast(spawnPoint.transform.position, Vector2.down, 0.1f, groundLayer);
+        if(_playerMovement.grounded == false || readyToUse == false || hit2D.collider == null)
             return;
         
         AudioManager.SharedInstance.PlayClip("GlacialWave");
-        CreateGlacier(hit2D);
-        StartCoroutine(ShootGlacier());
+        CreateHexSpell(inputBinding.phase);
+        StartCoroutine(CastHexSpell(inputBinding.phase));
     }
 
-    void CreateSpawnPoint()
+    public override void CreateSpawnPoint()
     {
         spawnPoint = new GameObject("GlacierSpawnPoint");
         spawnPoint.transform.parent = this.transform;
         spawnPoint.transform.localPosition = new Vector2(0.5625f, -0.6095f);
     }
 
-    void CreateGlacier(RaycastHit2D hit2D)
+    public override void CreateHexSpell(InputActionPhase direction)
     {
         GameObject glacier = ObjectPooler.SharedInstance.GetPooledObject("Ice");
         if (glacier != null)
@@ -74,9 +40,9 @@ public class PlayerGlacier : MonoBehaviour
         }
     }
 
-    IEnumerator ShootGlacier()
+    public override IEnumerator CastHexSpell(InputActionPhase direction)
     {
-        canShoot = false;
+        readyToUse = false;
         _rigidbody2D.bodyType = RigidbodyType2D.Static;
         _animationManager.ChangeAnimationState("Player_ShootGlacier");
         yield return new WaitForSeconds(0.5f);
@@ -84,6 +50,7 @@ public class PlayerGlacier : MonoBehaviour
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         yield return new WaitForSeconds(0.75f);
 
-        canShoot = true;
+        HexSpellManager.SharedInstance.ChangeCurrentSpell(0, " ");
+        InterfaceManager.SharedInstance.UpdateInterface(0, " ");
     }
 }

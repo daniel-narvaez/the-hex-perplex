@@ -17,6 +17,7 @@ public class EnemyDeath : MonoBehaviour
 
     public void HitByAttack()
     {
+        AudioManager.SharedInstance.PlayClip("PlayerDeath");
         _animator.SetTrigger("Death");
         _rigidbody.velocity = Vector2.zero;
         _rigidbody.gravityScale = 0;

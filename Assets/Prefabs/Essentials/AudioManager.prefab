@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3261463310130832344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3261463310130832350}
+  - component: {fileID: 3261463310130832345}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3261463310130832350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261463310130832344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3261463310130832345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261463310130832344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880a90650e7d6194299d2d1087b8b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Jump
+    AudioClip: {fileID: 8300000, guid: 697a5cc75aab6764ebb352689d42f0f3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: PyroShot
+    AudioClip: {fileID: 8300000, guid: e12f50e3e9fb66e4c8621b0d491a2189, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: GlacialWave
+    AudioClip: {fileID: 8300000, guid: 94e0aad1a437d0b45b3e3694fdec8383, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: PulseDash
+    AudioClip: {fileID: 8300000, guid: 6da82e360428f5049bb5644f5cab9236, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: SpellBook
+    AudioClip: {fileID: 8300000, guid: 910ad274795cf714890b40ef88cc971e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: PlayerDeath
+    AudioClip: {fileID: 8300000, guid: 212bb747b881c4149b202c3896447baa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: Teleport
+    AudioClip: {fileID: 8300000, guid: 48ae38cc101a28d4485cc9ef044b6690, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: EnemyAttack1
+    AudioClip: {fileID: 8300000, guid: 7439ecb14a0d5104a8b35f6a8a747ab5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: MenuButton
+    AudioClip: {fileID: 8300000, guid: 2b6ad90cc9fdfed4585685305b4bfd80, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  - name: EnemyDeath
+    AudioClip: {fileID: 8300000, guid: 49a1eda151bd7534d865b89660d0cdbf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  songs:
+  - name: Level
+    AudioClip: {fileID: 8300000, guid: 5cb98776c28d9a14d8b3ae63e28c8005, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    AudioSource: {fileID: 0}
+  - name: Title
+    AudioClip: {fileID: 8300000, guid: aa25ea3b61420e44bb0307b5d4c6268b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    AudioSource: {fileID: 0}
+  currentSong: 

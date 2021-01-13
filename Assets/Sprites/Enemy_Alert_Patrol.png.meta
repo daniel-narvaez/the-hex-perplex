@@ -1,0 +1,670 @@
+fileFormatVersion: 2
+guid: bdc567be343d4054b9f5475233930607
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6224428166902604328
+    second: EnemyPatrolIdle_0
+  - first:
+      213: 5681714852479581449
+    second: EnemyPatrolIdle_1
+  - first:
+      213: -6725223724451737947
+    second: EnemyPatrolIdle_2
+  - first:
+      213: -3304137699293400840
+    second: EnemyPatrolIdle_3
+  - first:
+      213: 5635126962466159900
+    second: EnemyPatrolIdle_4
+  - first:
+      213: 8400961882610580408
+    second: EnemyPatrolIdle_5
+  - first:
+      213: 4478740369548710538
+    second: EnemyPatrolIdle_6
+  - first:
+      213: -4814169787809236931
+    second: EnemyPatrolIdle_7
+  - first:
+      213: -5194651376487155450
+    second: EnemyPatrolIdle_8
+  - first:
+      213: -1940726030016563011
+    second: EnemyPatrolIdle_9
+  - first:
+      213: 7127594840636695304
+    second: EnemyPatrolIdle_10
+  - first:
+      213: 8472478469460677348
+    second: EnemyPatrolIdle_11
+  - first:
+      213: -8012278685893859121
+    second: EnemyPatrolIdle_12
+  - first:
+      213: -381473182270106306
+    second: EnemyPatrolIdle_13
+  - first:
+      213: 4084688302595086726
+    second: EnemyPatrolIdle_14
+  - first:
+      213: 4361695050664932571
+    second: EnemyPatrolIdle_15
+  - first:
+      213: 322333372658674302
+    second: EnemyPatrol_Alert_0
+  - first:
+      213: -4100216254494968412
+    second: EnemyPatrol_Alert_1
+  - first:
+      213: 3300795130760672668
+    second: EnemyPatrol_Alert_2
+  - first:
+      213: -8715921623774129473
+    second: EnemyPatrol_Alert_3
+  - first:
+      213: 6111393829499091664
+    second: EnemyPatrol_Alert_4
+  - first:
+      213: 494028931240619469
+    second: EnemyPatrol_Alert_5
+  - first:
+      213: 7052055293551403092
+    second: EnemyPatrol_Alert_6
+  - first:
+      213: 5181501417815803731
+    second: EnemyPatrol_Alert_7
+  - first:
+      213: 7337593880181010464
+    second: EnemyPatrol_Alert_8
+  - first:
+      213: -7765600052292282882
+    second: EnemyPatrol_Alert_9
+  - first:
+      213: 8333852993707210877
+    second: EnemyPatrol_Alert_10
+  - first:
+      213: 8079161969097248527
+    second: EnemyPatrol_Alert_11
+  - first:
+      213: -4296335781127688152
+    second: EnemyPatrol_Alert_12
+  - first:
+      213: -2667162695542636524
+    second: EnemyPatrol_Alert_13
+  - first:
+      213: -2906992616474652801
+    second: EnemyPatrol_Alert_14
+  - first:
+      213: 1281196050547215469
+    second: EnemyPatrol_Alert_15
+  - first:
+      213: 4513980762533369004
+    second: Enemy_Patrol_Alert_0
+  - first:
+      213: 64116775296049513
+    second: Enemy_Patrol_Alert_1
+  - first:
+      213: 3225206719597145736
+    second: Enemy_Patrol_Alert_2
+  - first:
+      213: -9037588233959845980
+    second: Enemy_Patrol_Alert_3
+  - first:
+      213: -4010888295626791423
+    second: Enemy_Patrol_Alert_4
+  - first:
+      213: -6205760195073316935
+    second: Enemy_Patrol_Alert_5
+  - first:
+      213: -1925200932469148407
+    second: Enemy_Patrol_Alert_6
+  - first:
+      213: 7796493868561282548
+    second: Enemy_Patrol_Alert_7
+  - first:
+      213: 3981648580475473573
+    second: Enemy_Patrol_Alert_8
+  - first:
+      213: 5768609999549128026
+    second: Enemy_Patrol_Alert_9
+  - first:
+      213: -7867815019154703867
+    second: Enemy_Patrol_Alert_10
+  - first:
+      213: 1137618608354735856
+    second: Enemy_Patrol_Alert_11
+  - first:
+      213: 6958143584359639998
+    second: Enemy_Patrol_Alert_12
+  - first:
+      213: -1018967583703983690
+    second: Enemy_Patrol_Alert_13
+  - first:
+      213: 2560696326821709184
+    second: Enemy_Patrol_Alert_14
+  - first:
+      213: -4663341884116132570
+    second: Enemy_Patrol_Alert_15
+  - first:
+      213: 836481856855578808
+    second: Enemy_Alert_Patrol_0
+  - first:
+      213: -7056451213145606641
+    second: Enemy_Alert_Patrol_1
+  - first:
+      213: 5702177919061513419
+    second: Enemy_Alert_Patrol_2
+  - first:
+      213: 5392230257512014662
+    second: Enemy_Alert_Patrol_3
+  - first:
+      213: 7285844230376079784
+    second: Enemy_Alert_Patrol_4
+  - first:
+      213: -1983393496606925510
+    second: Enemy_Alert_Patrol_5
+  - first:
+      213: -3553891325378199711
+    second: Enemy_Alert_Patrol_6
+  - first:
+      213: 8285273658977775700
+    second: Enemy_Alert_Patrol_7
+  - first:
+      213: -1481731286490208227
+    second: Enemy_Alert_Patrol_8
+  - first:
+      213: -8343979308395310473
+    second: Enemy_Alert_Patrol_9
+  - first:
+      213: -5640352497582561496
+    second: Enemy_Alert_Patrol_10
+  - first:
+      213: -8948700857285087806
+    second: Enemy_Alert_Patrol_11
+  - first:
+      213: -1216131830747320667
+    second: Enemy_Alert_Patrol_12
+  - first:
+      213: 5370749182840771073
+    second: Enemy_Alert_Patrol_13
+  - first:
+      213: -3564265595804802447
+    second: Enemy_Alert_Patrol_14
+  - first:
+      213: 6835609462305238229
+    second: Enemy_Alert_Patrol_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b89fe221d7cb9b00800000000000000
+      internalID: 836481856855578808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06f4912203721e90800000000000000
+      internalID: -7056451213145606641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4dcbf1b94322f40800000000000000
+      internalID: 5702177919061513419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643ed1699dc05da40800000000000000
+      internalID: 5392230257512014662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14568b9b48c1560800000000000000
+      internalID: 7285844230376079784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d9ce09f129974e0800000000000000
+      internalID: -1983393496606925510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f7d7c3baa0eaec0800000000000000
+      internalID: -3553891325378199711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450754ede743bf270800000000000000
+      internalID: 8285273658977775700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d182b28de35df6be0800000000000000
+      internalID: -1481731286490208227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77253edf60b343c80800000000000000
+      internalID: -8343979308395310473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827aa9d894179b1b0800000000000000
+      internalID: -5640352497582561496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cde9488bf3dfc380800000000000000
+      internalID: -8948700857285087806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aea2441b8e6f1fe0800000000000000
+      internalID: -1216131830747320667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10291f42debb88a40800000000000000
+      internalID: 5370749182840771073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172a8ec235f298ec0800000000000000
+      internalID: -3564265595804802447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Alert_Patrol_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dca000e696fcde50800000000000000
+      internalID: 6835609462305238229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

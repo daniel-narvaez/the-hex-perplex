@@ -1,17 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SwitchManager : MonoBehaviour
+public class SwitchManager : Manager
 {
     public static SwitchManager SharedInstance;
-    public bool blocksActivated;
-    public bool redPathActivated;
-    public bool bluePathActivated;
-    public bool yellowPathActivated;
+    public bool redPathActivated, bluePathActivated, yellowPathActivated; //Set during gameplay
+    public bool redPathStart, bluePathStart, yellowPathStart; //Set in inspector
+
 
     void Awake()
     {
-        SharedInstance = this;
+        if (FindObjectsOfType<SwitchManager>().Length > 1)
+            Destroy(gameObject);
+
+        if(SharedInstance == null)
+            SharedInstance = this;
+        else
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+        Reset();
+    }
+
+    public override void Reset()
+    {
+        redPathActivated = redPathStart;
+        bluePathActivated = bluePathStart;
+        yellowPathActivated = yellowPathStart;
+    }
+
+    public void SetEachHexPath(bool redState, bool blueState, bool yellowState)
+    {
+        redPathStart = redState;
+        bluePathStart = blueState;
+        yellowPathStart = yellowState;
+        Reset();
+    }
+
+    public void SetAllHexPaths(bool state)
+    {
+        redPathActivated = state;
+        bluePathActivated = state;
+        yellowPathActivated = state;
     }
 }

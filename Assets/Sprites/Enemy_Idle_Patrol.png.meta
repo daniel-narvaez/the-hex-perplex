@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: 90986189748e2d34c9b666e9c99f9d07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -810195802394630959
+    second: EnemyPatrol_Idle_0
+  - first:
+      213: -4350514064067653000
+    second: EnemyPatrol_Idle_1
+  - first:
+      213: 3119574394805062503
+    second: EnemyPatrol_Idle_2
+  - first:
+      213: 2635477152049623900
+    second: EnemyPatrol_Idle_3
+  - first:
+      213: -2337015288486287435
+    second: EnemyPatrol_Idle_4
+  - first:
+      213: 6685295728337634826
+    second: EnemyPatrol_Idle_5
+  - first:
+      213: 1001249400850149887
+    second: EnemyPatrol_Idle_6
+  - first:
+      213: -4565627329895098571
+    second: EnemyPatrol_Idle_7
+  - first:
+      213: 6487240421849598812
+    second: EnemyPatrol_Idle_8
+  - first:
+      213: -554879802068385717
+    second: EnemyPatrol_Idle_9
+  - first:
+      213: 778736803299951688
+    second: EnemyPatrol_Idle_10
+  - first:
+      213: 7503591776453334927
+    second: EnemyPatrol_Idle_11
+  - first:
+      213: -2114199229388320753
+    second: EnemyPatrol_Idle_12
+  - first:
+      213: 7319953488729765489
+    second: EnemyPatrol_Idle_13
+  - first:
+      213: 4103842357222913705
+    second: EnemyPatrol_Idle_14
+  - first:
+      213: 8083081242590964736
+    second: EnemyPatrol_Idle_15
+  - first:
+      213: 944046347879227861
+    second: Enemy_Patrol_Idle_0
+  - first:
+      213: -5915799976623915453
+    second: Enemy_Patrol_Idle_1
+  - first:
+      213: -4532939765849480471
+    second: Enemy_Patrol_Idle_2
+  - first:
+      213: -137382131510159519
+    second: Enemy_Patrol_Idle_3
+  - first:
+      213: -2176525903335406688
+    second: Enemy_Patrol_Idle_4
+  - first:
+      213: -6989788007777948458
+    second: Enemy_Patrol_Idle_5
+  - first:
+      213: -825471522567104556
+    second: Enemy_Patrol_Idle_6
+  - first:
+      213: 2549879021197733961
+    second: Enemy_Patrol_Idle_7
+  - first:
+      213: -6128845854915713245
+    second: Enemy_Patrol_Idle_8
+  - first:
+      213: 3006935369806016136
+    second: Enemy_Patrol_Idle_9
+  - first:
+      213: -7334967103797234049
+    second: Enemy_Patrol_Idle_10
+  - first:
+      213: -678881694842311762
+    second: Enemy_Patrol_Idle_11
+  - first:
+      213: 237277638651284482
+    second: Enemy_Patrol_Idle_12
+  - first:
+      213: -3579558564585511789
+    second: Enemy_Patrol_Idle_13
+  - first:
+      213: 5285355468208946761
+    second: Enemy_Patrol_Idle_14
+  - first:
+      213: -5842411109600977651
+    second: Enemy_Patrol_Idle_15
+  - first:
+      213: -2715319217982646012
+    second: Enemy_Idle_Patrol_0
+  - first:
+      213: -4240605304105818378
+    second: Enemy_Idle_Patrol_1
+  - first:
+      213: -6588616405196303008
+    second: Enemy_Idle_Patrol_2
+  - first:
+      213: 2589176346137388781
+    second: Enemy_Idle_Patrol_3
+  - first:
+      213: 106727210083454969
+    second: Enemy_Idle_Patrol_4
+  - first:
+      213: -5023235001273229234
+    second: Enemy_Idle_Patrol_5
+  - first:
+      213: -2461982380535870473
+    second: Enemy_Idle_Patrol_6
+  - first:
+      213: -3573956682107759758
+    second: Enemy_Idle_Patrol_7
+  - first:
+      213: -8931256348701231332
+    second: Enemy_Idle_Patrol_8
+  - first:
+      213: -5402018843562894431
+    second: Enemy_Idle_Patrol_9
+  - first:
+      213: 7802918839802682881
+    second: Enemy_Idle_Patrol_10
+  - first:
+      213: -4021307959757879763
+    second: Enemy_Idle_Patrol_11
+  - first:
+      213: 1333039201588474685
+    second: Enemy_Idle_Patrol_12
+  - first:
+      213: 905463466341818771
+    second: Enemy_Idle_Patrol_13
+  - first:
+      213: 3317919721326651213
+    second: Enemy_Idle_Patrol_14
+  - first:
+      213: 9041126568082379906
+    second: Enemy_Idle_Patrol_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4095a50ce8f315ad0800000000000000
+      internalID: -2715319217982646012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a22091f75625c0800000000000000
+      internalID: -4240605304105818378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06596f699488094a0800000000000000
+      internalID: -6588616405196303008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6ec543b2a9ee320800000000000000
+      internalID: 2589176346137388781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff84e405db2b7100800000000000000
+      internalID: 106727210083454969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40eccd6162e94ab0800000000000000
+      internalID: -5023235001273229234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb83eca11845ddd0800000000000000
+      internalID: -2461982380535870473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27355505551c66ec0800000000000000
+      internalID: -3573956682107759758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f5b1bbadcd0480800000000000000
+      internalID: -8931256348701231332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab977f9b7c2805b0800000000000000
+      internalID: -5402018843562894431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e54a9d759894c60800000000000000
+      internalID: 7802918839802682881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d264e2667b17138c0800000000000000
+      internalID: -4021307959757879763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33f9525718ef7210800000000000000
+      internalID: 1333039201588474685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391e56ca93ad09c00800000000000000
+      internalID: 905463466341818771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4720fe486e9b0e20800000000000000
+      internalID: 3317919721326651213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Idle_Patrol_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28495e336b8887d70800000000000000
+      internalID: 9041126568082379906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

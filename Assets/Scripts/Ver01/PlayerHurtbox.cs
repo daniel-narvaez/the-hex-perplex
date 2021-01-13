@@ -2,16 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHurtbox : MonoBehaviour
+public class PlayerHurtbox : Hurtbox
 {
-    private Player player;
-
-    void Start()
+    BoxCollider2D _boxCollider2D;
+    ParticleSystem _particleSystem;
+    public override void Start()
     {
-        player = this.transform.parent.gameObject.GetComponent<Player>();
+        base.Start();
+        _particleSystem = GetComponent<ParticleSystem>();
+        _boxCollider2D = GetComponent<BoxCollider2D>();
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    public override IEnumerator Death()
     {
-        StartCoroutine(player.HitByAttack());
+        _rigidbody2D.bodyType = RigidbodyType2D.Static;
+        _animationManager.ChangeAnimationState("Player_Dying_Non_Int");
+        _particleSystem.Play();
+        _boxCollider2D.enabled = false;
+        AudioManager.SharedInstance.PlayClip("PlayerDeath");
+        yield return new WaitForSeconds(0.5f);
+
+        parent.SetActive(false);
+        TransitionManager.SharedInstance.RestartLevel();
     }
 }

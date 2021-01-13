@@ -7,10 +7,9 @@ public class MapCollider : MonoBehaviour
     BoxCollider2D _boxCollider2D;
     SpriteRenderer _spriteRenderer;
     public bool special;
-    public float xOffset;
-    public float yOffset;
+    public float xOffset, yOffset;
 
-    void Start()
+    void OnEnable()
     {
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();

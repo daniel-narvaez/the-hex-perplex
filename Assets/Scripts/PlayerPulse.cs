@@ -4,73 +4,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerPulse : MonoBehaviour
+public class PlayerPulse : HexSpell
 {
-    public InputAction pulseDash, Up;
-    GameObject spawnPoint;
-    bool canDash = true;
     public int dashForce;
-    float _gravityScale;
+    public float _gravityScale;
 
-    //Movement
-    Rigidbody2D _rigidbody2D;
-    PlayerMovement _playerMovement;
-
-    //Animation
-    AnimationManager _animationManager;
-
-    void OnEnable()
+    public override void Start()
     {
-        pulseDash.Enable();
-        Up.Enable();
-    }
-
-    void OnDisable()
-    {
-        pulseDash.Disable();
-        Up.Disable();
-    }
-
-    void Awake()
-    {
-        pulseDash.started += ctx => TriggerCoroutine(Up.phase);
-    }
-
-    void Start()
-    {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
+        base.Start();
         _gravityScale = _rigidbody2D.gravityScale;
-        _playerMovement = GetComponent<PlayerMovement>();
-
-        _animationManager = GetComponent<AnimationManager>();
-
-        CreateSpawnPoint();
     }
 
-    void Update()
-    {
-        if(_playerMovement.grounded && !_animationManager.currentState.Contains("_Non_Int"))
-            canDash = true;
-    }
+    // void Update()
+    // {
+    //     if(_playerMovement.grounded && !_animationManager.currentState.Contains("_Non_Int"))
+    //         canDash = true;
+    // }
 
-    void TriggerCoroutine(InputActionPhase direction)
+    public override void TriggerCoroutine(InputActionPhase direction)
     {
-        if (canDash == false)
+        if (readyToUse == false)
             return;
 
         AudioManager.SharedInstance.PlayClip("PulseDash");
-        CreatePulse(direction);
-        StartCoroutine(InitiateDash(direction));
+        CreateHexSpell(direction);
+        StartCoroutine(CastHexSpell(direction));
     }
 
-    void CreateSpawnPoint()
+    public override void CreateSpawnPoint()
     {
         spawnPoint = new GameObject("PulseSpawnPoint");
         spawnPoint.transform.parent = this.transform;
         spawnPoint.transform.localPosition = new Vector2(0f, -0.125f);
     }
 
-    void CreatePulse(InputActionPhase direction)
+    public override void CreateHexSpell(InputActionPhase direction)
     {
         GameObject pulse = ObjectPooler.SharedInstance.GetPooledObject("Lightning");
         if (pulse != null)
@@ -90,9 +58,9 @@ public class PlayerPulse : MonoBehaviour
         }
     }
 
-    IEnumerator InitiateDash(InputActionPhase direction)
+    public override IEnumerator CastHexSpell(InputActionPhase direction)
     {
-        canDash = false;
+        readyToUse = false;
 
         if (direction == InputActionPhase.Waiting)
         {
@@ -100,8 +68,12 @@ public class PlayerPulse : MonoBehaviour
             _rigidbody2D.gravityScale = 0f;
             _rigidbody2D.AddForce(new Vector2(dashForce * _playerMovement.orientation, 75f));
             _animationManager.ChangeAnimationState("Player_InitiateDash_Non_Int");
-            yield return new WaitForSeconds(0.375f);
-            
+            yield return new WaitForSeconds(0.1f);
+        
+            HexSpellManager.SharedInstance.ChangeCurrentSpell(0, " ");
+            InterfaceManager.SharedInstance.UpdateInterface(0, " ");
+            yield return new WaitForSeconds(0.275f);
+
             _rigidbody2D.gravityScale = _gravityScale;
             _animationManager.currentState = "null";
         }
@@ -110,9 +82,14 @@ public class PlayerPulse : MonoBehaviour
             _rigidbody2D.velocity = Vector2.zero;
             _rigidbody2D.AddForce(new Vector2(0f, dashForce));
             _animationManager.ChangeAnimationState("Player_InitiateDash_Non_Int");
-            yield return new WaitForSeconds(0.375f);
+            yield return new WaitForSeconds(0.1f);
+
+            HexSpellManager.SharedInstance.ChangeCurrentSpell(0, " ");
+            InterfaceManager.SharedInstance.UpdateInterface(0, " ");
+            yield return new WaitForSeconds(0.275f);
 
             _animationManager.currentState = "null";
         }
+
     }
 }

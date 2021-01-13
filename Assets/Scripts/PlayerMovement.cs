@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rigidbody2D.velocity = new Vector2(Mathf.Round(move) * moveSpeed, _rigidbody2D.velocity.y);
                 if(grounded)
-                    _animationManager.ChangeAnimationState("Player_TipToe");
+                    _animationManager.ChangeAnimationState("Player_Run");
             }
 
             if((move < -0.25f && orientation > 0) || (move > 0.25f && orientation < 0))
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(_rigidbody2D.bodyType == RigidbodyType2D.Dynamic && !_animationManager.currentState.Contains("_Non_Int"))
         {
-            if (grounded && _rigidbody2D.velocity.y == 0 && Jump.phase == InputActionPhase.Started) //Pressed Jump
+            if (grounded && Jump.phase == InputActionPhase.Started) //Pressed Jump
             {              
                 jumping = true;
                 jumpDurationCounter = maxJumpDuration;

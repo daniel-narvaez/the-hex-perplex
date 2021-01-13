@@ -19,8 +19,9 @@ TagManager:
   - Ice
   - Fire
   - Lightning
-  - FireBall
-  - Icicle
+  - Item
+  - ScreenBounds
+  - EnemyAttack1
   layers:
   - Default
   - TransparentFX
@@ -38,7 +39,7 @@ TagManager:
   - Enemy Hitbox
   - Enemy Hurtbox
   - Camera Bounds
-  - 
+  - Item
   - 
   - 
   - 

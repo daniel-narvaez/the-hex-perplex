@@ -14,12 +14,12 @@ public class TitleScreenManager : MonoBehaviour
     //Title Screen Buttons
     public void GameStart()
     {
-        _transitionManager.NextScene("Level1");
+       // _transitionManager.NextScene(Color.black, "Level1");
     }
 
     public void Tutorial()
     {
-        _transitionManager.NextScene("Tutorial");
+        //_transitionManager.NextScene(Color.black, "Tutorial");
     }
 
     public void QuitGame()
